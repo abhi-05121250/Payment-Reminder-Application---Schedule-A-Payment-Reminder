@@ -1,0 +1,41 @@
+{
+  "name": "payment-reminder-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-frontend": "npx http-server ./public",
+    "start-backend": "node server.js",
+    "start": "npm run start-frontend & npm run start-backend",
+    "test1": "npx cypress run -s cypress/e2e/module_1.cy.js --record false",
+    "test2": "npx cypress run -s cypress/e2e/module_2.cy.js --record false", 
+    "test3":"npx cypress run -s cypress/e2e/module_3.cy.js --record false"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.5",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.7",
+    "cypress": "12.8.1"
+  }
+}
